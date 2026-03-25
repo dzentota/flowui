@@ -1,0 +1,325 @@
+/**
+ * FlowUI - Default Styles
+ * Minimal styling for core components
+ */
+
+/* Error Styles */
+.flow-error {
+    color: #d32f2f;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.flow-error-field {
+    border-color: #d32f2f !important;
+    outline-color: #d32f2f !important;
+}
+
+/* Tabs */
+.flow-tabs-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.flow-tabs-nav li {
+    margin: 0;
+}
+
+.flow-tabs-nav button {
+    background: none;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #666;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: all 0.2s;
+}
+
+.flow-tabs-nav button:hover {
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.flow-tabs-nav button.active {
+    color: #1976d2;
+    border-bottom-color: #1976d2;
+}
+
+/* Accordion */
+[data-ui="accordion"] section {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+[data-ui="accordion"] section header {
+    padding: 1rem;
+    background-color: #f5f5f5;
+    font-weight: 500;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+[data-ui="accordion"] section header:hover {
+    background-color: #e0e0e0;
+}
+
+[data-ui="accordion"] section content {
+    padding: 1rem;
+    background-color: white;
+}
+
+/* Modal */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+    width: 90%;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Form Enhancements */
+form input[data-rules],
+form textarea[data-rules],
+form select[data-rules] {
+    transition: border-color 0.2s, outline-color 0.2s;
+}
+
+/* Utility Classes */
+.flow-hidden {
+    display: none !important;
+}
+
+.flow-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Dropdown/Popover */
+.flow-dropdown-trigger {
+    cursor: pointer;
+}
+
+.flow-dropdown-menu {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem 0;
+    z-index: 1000;
+    list-style: none;
+    margin: 0;
+}
+
+.flow-dropdown-menu li {
+    padding: 0;
+    margin: 0;
+}
+
+.flow-dropdown-menu a,
+.flow-dropdown-menu button {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.flow-dropdown-menu a:hover,
+.flow-dropdown-menu button:hover {
+    background-color: #f5f5f5;
+}
+
+/* Alerts/Notifications */
+.flow-alerts-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    max-width: 400px;
+}
+
+.flow-alert {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    border-left: 4px solid;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: white;
+    transition: opacity 0.3s;
+}
+
+.flow-alert-success {
+    border-left-color: #4caf50;
+}
+
+.flow-alert-error {
+    border-left-color: #f44336;
+}
+
+.flow-alert-warning {
+    border-left-color: #ff9800;
+}
+
+.flow-alert-info {
+    border-left-color: #2196f3;
+}
+
+.flow-alert-icon {
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
+    font-weight: bold;
+}
+
+.flow-alert-success .flow-alert-icon {
+    color: #4caf50;
+}
+
+.flow-alert-error .flow-alert-icon {
+    color: #f44336;
+}
+
+.flow-alert-warning .flow-alert-icon {
+    color: #ff9800;
+}
+
+.flow-alert-info .flow-alert-icon {
+    color: #2196f3;
+}
+
+.flow-alert-message {
+    flex: 1;
+    color: #333;
+}
+
+.flow-alert-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 1rem;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.flow-alert-close:hover {
+    color: #333;
+}
+
+/* Sortable Tables */
+.flow-sortable-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.flow-sortable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.flow-sort-link {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flow-sort-link:hover {
+    color: #1976d2;
+}
+
+.flow-sort-indicator {
+    margin-left: 0.5rem;
+    opacity: 0.5;
+}
+
+.flow-sortable[data-active="true"] .flow-sort-link {
+    color: #1976d2;
+    font-weight: 600;
+}
+
+.flow-sortable[data-active="true"] .flow-sort-indicator {
+    opacity: 1;
+}
+
+/* Pagination */
+.flow-pagination {
+    margin: 2rem 0;
+}
+
+.flow-pagination-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.flow-pagination-list li {
+    margin: 0;
+}
+
+.flow-pagination-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s;
+    background: white;
+}
+
+.flow-pagination-link:hover:not(.flow-pagination-disabled):not(.flow-pagination-active) {
+    background: #f5f5f5;
+    border-color: #1976d2;
+    color: #1976d2;
+}
+
+.flow-pagination-active {
+    background: #1976d2;
+    color: white;
+    border-color: #1976d2;
+    font-weight: 600;
+}
+
+.flow-pagination-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.flow-pagination-ellipsis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.5rem;
+    height: 2.5rem;
+    color: #666;
+}
